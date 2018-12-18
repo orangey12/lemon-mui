@@ -1,0 +1,140 @@
+*{
+	list-style: none;
+	box-sizing: border-box;
+	margin:0;
+}
+.mui-bar{
+	height:94px;
+	background: #FAE363;
+	p{
+		color:#000;
+        width:208px;
+		border-radius:10px;	
+		box-sizing: border-box;
+		border:1px solid #323431;
+		overflow: hidden;
+		margin:10px auto;
+        display: flex;
+        height:23px;
+		align-items: center;
+		justify-content: space-between;
+		span{
+            padding:3px 0;
+			text-align: center;
+			width:33%;
+		}
+		span:not(:last-child){
+			border-right:1px solid #323431;
+		}
+		span.cur{
+			color:#8A8045;
+			background: #323431;
+		}
+	}
+	h3{
+		margin:0 12px;
+		text-align: center;
+		line-height:40px;
+		font-size:28px;
+		border-bottom:1px solid #000;
+		span{
+			border-right:1px solid #000
+		}
+	}
+}
+
+.mui-bar-nav~.mui-content {
+	padding-top:100px;
+}
+
+.mui-content{
+	height:100%;
+	display: flex;
+	flex-direction: column;
+	background: #fff;
+}
+
+.slide-wrap,.timer-title{
+	padding:0;
+	display:flex;
+}
+.timer{
+	flex:1;
+	padding:0 15px;
+	.timer-title{
+		border-top:1px solid #F4F8FB;
+		border-bottom:1px solid #F4F8FB;
+		justify-content: space-between;
+		display: flex;
+		padding:15px 0;
+		font-size: 14px;
+		.mui-icon{
+			color:#AFAFAF
+		}
+	}	
+	h6{
+		height:50px;
+		align-items: center;
+		justify-content: space-between;
+		display: flex;
+		span:first-child{
+			color:#000;
+			font-size: 16px;
+		}
+	}
+	.key-board{				
+		border-top:1px solid #ccc;
+		padding:0;
+		height:100%;
+		display:flex;
+		margin:0 -15px;
+		li{
+			display: flex;
+			flex-direction: column;
+			width:25%;
+			font-size: 18px;
+			font-weight: 900;
+			span{
+				text-align: center;
+				line-height: 50px;
+				width:100%;
+				height:50px;
+				border-right:1px solid #ccc;
+				border-bottom:1px solid #ccc
+			}
+		}
+		li:last-child{
+			span{
+				flex:1;
+				font-size: 20px;
+				font-weight: 800;
+				background: #FAE363;
+				line-height: 200px;
+			}
+		}
+	}
+}
+	
+.slide-wrap{
+	margin-top:15px;
+	flex-wrap:wrap;
+	li{
+		text-align: center;
+		width:25%;
+		display: flex;
+		flex-direction:column;
+		margin-bottom:18px;
+		.mui-icon{
+			width:40px;
+			height:40px;
+			line-height: 34px;
+			margin:0 auto 10px;
+			border-radius:50%;
+			background: #F2F2F2;
+			padding:5px;
+		}
+		span.active{
+			background:  #FAE363
+		}
+	}
+}

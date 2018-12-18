@@ -1,0 +1,25 @@
+require.config({
+    baseUrl:'/js',
+    paths:{
+        'mui':'lib/mui.min',
+		'dom':'common/dom',
+		'format':"common/format",
+		'moment':"lib/moment",
+		
+		'picker':'lib/mui.picker.min',
+		'poppicker':'lib/mui.poppicker',
+		'dtpicker':'lib/mui.dtpicker',
+		'echars':'https://cdnjs.cloudflare.com/ajax/libs/echarts/4.1.0/echarts.min'
+    },
+	shim:{
+		'poppicker':{
+			deps:['mui']
+		},
+		'picker':{
+			deps:['mui']
+		},
+		'dtpicker':{
+			deps:['mui']
+		}
+	}
+})

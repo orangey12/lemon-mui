@@ -1,0 +1,218 @@
+* {
+  border: 0;
+  outline: none; }
+
+.menu {
+  background: #fff; }
+  .menu .menu-con {
+    padding: 0 10px; }
+    .menu .menu-con h5 {
+      color: #000;
+      margin-top: 20px;
+      font-weight: 550;
+      padding-left: 5px;
+      border-left: 2px solid #FFE344; }
+    .menu .menu-con p {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 80%;
+      text-align: center;
+      margin: 0 auto; }
+    .menu .menu-con span {
+      font-size: 12px;
+      border-radius: 10px;
+      overflow: hidden;
+      border: 1px solid #B4B4B4;
+      color: #B4B4B4;
+      padding: 2px 10px;
+      margin-top: 10px; }
+    .menu .menu-con h5.btns {
+      display: flex;
+      justify-content: space-between; }
+      .menu .menu-con h5.btns button {
+        width: 95px;
+        border: 0;
+        border-radius: 10px;
+        overflow: hidden;
+        color: #fff;
+        line-height: 5px;
+        height: 25px;
+        font-size: 16px; }
+      .menu .menu-con h5.btns button:nth-child(1) {
+        background: #E1E1E1; }
+      .menu .menu-con h5.btns button:last-child {
+        background: #FFE344; }
+
+.wrap {
+  display: flex;
+  flex-direction: column; }
+  .wrap .mui-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    margin-bottom: 50px;
+    background: #fff; }
+
+.wrap header {
+  display: flex;
+  height: 109px;
+  padding: 10px 15px;
+  background: #FFE344;
+  justify-content: space-between; }
+  .wrap header .head-left p {
+    color: #000; }
+  .wrap header .head-left p:nth-child(2) b {
+    font-size: 30px; }
+  .wrap header .head-left p:nth-child(3) b {
+    font-size: 16px; }
+  .wrap header .head-right {
+    height: 40px;
+    display: flex;
+    justify-content: space-between; }
+    .wrap header .head-right p {
+      color: #000;
+      margin-left: 15px;
+      font-size: 14px;
+      border-radius: 15px;
+      overflow: hidden;
+      padding: 0 5px;
+      border: 1px solid #5E4D00; }
+      .wrap header .head-right p span {
+        color: #000; }
+
+.header {
+  display: flex;
+  align-items: center;
+  padding: 5px 15px;
+  justify-content: space-between;
+  z-index: 99; }
+  .header .mui-icon {
+    color: #000; }
+  .header p {
+    height: 28px;
+    width: 116px;
+    border: 1px solid #C4C4C4;
+    border-radius: 20px;
+    overflow: hidden;
+    display: flex; }
+    .header p span {
+      width: 50%;
+      line-height: 28px;
+      text-align: center; }
+    .header p span.cur {
+      color: #000;
+      background: #FFE344; }
+
+.bill-con, .bill-wrap, .chart, .chart-con {
+  flex: 1;
+  overflow: hidden;
+  top: 160px;
+  bottom: 50px; }
+
+.bill-con .bill-month, .bill-con .bill-year {
+  flex: 1;
+  height: 100%; }
+
+.bill-con .bill-year {
+  display: none; }
+  .bill-con .bill-year .mui-table-view-cell.mui-collapse .mui-table-view {
+    margin-top: 0; }
+  .bill-con .bill-year .mui-slider-handle {
+    display: flex;
+    justify-content: space-between;
+    margin-left: -13px; }
+    .bill-con .bill-year .mui-slider-handle div {
+      display: flex; }
+      .bill-con .bill-year .mui-slider-handle div p {
+        display: flex;
+        flex-direction: column; }
+        .bill-con .bill-year .mui-slider-handle div p span:nth-child(1) {
+          color: #000; }
+        .bill-con .bill-year .mui-slider-handle div p span:nth-child(2) {
+          font-size: 12px; }
+      .bill-con .bill-year .mui-slider-handle div .mui-icon {
+        width: 35px;
+        height: 35px;
+        margin-right: 10px;
+        border-radius: 50%;
+        background: #FAE363;
+        font-size: 26px;
+        padding: 5px;
+        color: #000; }
+    .bill-con .bill-year .mui-slider-handle .red {
+      line-height: 46px; }
+
+.bill-con .bill-month {
+  padding: 0 15px; }
+  .bill-con .bill-month .mui-table-view-cell:after, .bill-con .bill-month .mui-table-view:before, .bill-con .bill-month .mui-table-view:after {
+    height: 0; }
+  .bill-con .bill-month .bill-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 15px; }
+    .bill-con .bill-month .bill-title p, .bill-con .bill-month .bill-title p span {
+      font-size: 12px; }
+    .bill-con .bill-month .bill-title .mui-icon {
+      font-size: 18px; }
+  .bill-con .bill-month .mui-slider-handle {
+    display: flex;
+    line-height: 50px;
+    justify-content: space-between; }
+    .bill-con .bill-month .mui-slider-handle .mui-icon {
+      border-radius: 50%;
+      background: #FAE363;
+      font-size: 26px;
+      padding: 5px;
+      color: #000; }
+    .bill-con .bill-month .mui-slider-handle p span {
+      color: #000;
+      margin-right: 10px; }
+  .bill-con .bill-month li {
+    padding: 3px 15px; }
+
+.table-wrap ul {
+  padding: 0 50px 0 0;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between; }
+  .table-wrap ul > li:not(:first-child) {
+    display: flex;
+    flex-direction: column;
+    text-align: center; }
+
+.chart {
+  display: none; }
+
+.red {
+  color: #EC807E; }
+
+.green {
+  color: #6DDBAC; }
+
+.gray {
+  color: #B4B4B4; }
+
+.add {
+  margin: 0 auto;
+  width: 80px;
+  bottom: 25px;
+  text-align: center;
+  left: 50%;
+  height: 80px;
+  line-height: 80px;
+  margin-left: -40px;
+  position: absolute;
+  z-index: 9999; }
+  .add .mui-icon {
+    border-radius: 50%;
+    color: #fff;
+    padding: 5px;
+    background: #FAE363;
+    box-shadow: 0 2px 39px #af5454;
+    font-size: 40px; }
+
+ul, ol {
+  list-style: none; }

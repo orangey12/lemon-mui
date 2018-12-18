@@ -1,0 +1,33 @@
+*{
+	border: 0;
+	outline: none;
+}
+form{
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	p{	
+		margin-top:50px;
+		display: flex;
+		height:50px;
+		align-items: center;
+		justify-content: space-between;
+		label{
+			width:20%;
+			text-align: center;
+		}
+		input[type=text]{
+			margin:0;
+		}
+	}
+	button{
+		display: flex;
+		margin:0 auto;
+		width:75%;
+		justify-content: center;
+		height:35px;
+		background: yellow;
+		color:#fff;
+		margin-top:50px;
+	}
+}
